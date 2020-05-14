@@ -1,0 +1,47 @@
+int R = 4;
+int G = 2;
+int B = 3;
+
+void setup()
+{
+  pinMode(R, OUTPUT);
+  pinMode(B, OUTPUT);
+  pinMode(G, OUTPUT);
+  acenderBranca();
+}
+
+void loop()
+{
+  acenderMagenta();
+  delay(1000);
+  acenderCiano();
+  delay(1000);
+  acenderAmarelo();
+  delay(1000);
+  acenderBranca();
+  delay(1000);
+}
+
+void acenderMagenta(){
+  digitalWrite(R,1);
+  digitalWrite(B,1);
+  digitalWrite(G,0);
+}
+
+void acenderCiano(){
+  digitalWrite(R,0);
+  digitalWrite(B,1);
+  digitalWrite(G,1);
+}
+
+void acenderAmarelo(){
+  digitalWrite(R,1);
+  digitalWrite(B,0);
+  digitalWrite(G,1);
+}
+
+void acenderBranca(){
+  digitalWrite(R,0);
+  digitalWrite(B,0);
+  digitalWrite(G,0);
+}
