@@ -1,0 +1,15 @@
+int vermelho = 13;
+int verde = 5;
+int azul = 7;
+int cor = 255; 
+ 
+void setup() {
+
+}
+ 
+void loop() {
+
+analogWrite(verde, cor);
+delay (5);
+
+}
